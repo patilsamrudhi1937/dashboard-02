@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="icon" type="image/icon" href="./assets/img1.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="./assets/img1.png" alt="Logo">
+                <h2>SWD</h2>
+            </div>
+            <div class="sidebar-menu active">
+                <ul class="nav-links active">
+                   <li>
+                      <a href="#" class="menu-item active">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard</a></li>
+                    <li><a href="#" class="menu-item">
+                       <i class="fas fa-truck"></i>
+                       Vehicles</a></li>
+                    <li><a href="#" class="menu-item">
+                       <i class="fas fa-trash-alt"></i>
+                       Waste Collection</a></li>
+                    <li><a href="#" class="menu-item">
+                       <i class="fas fa-route"></i>
+                       Routes</a></li>
+                    <li><a href="#" class="menu-item">
+                       <i class="fas fa-chart-pie"></i>
+                       Reports</a></li>
+                    <li><a href="#" class="menu-item">
+                       <i class="fas fa-chart-pie"></i>
+                       Analytics</a></li>
+                    <li><a href="#" class="menu-item">
+                       <i class="fas fa-cog"></i>
+                      Settings</a></li>
+                    <li><a href="#" class="menu-item">
+                       <i class="fa-solid fa-right-from-bracket"></i>
+                      Logout</a></li>
+                    <li><a href="#" class="menu-item">
+                      <i class="fas fa-question-circle"></i>
+                      Help</a></li>
+                </ul>
+            </div>
+            <div class="navlink active"></div>
+        </aside>
+         <main class="main-content">
+            <nav class="navbar">
+                <header class="header">
+                    <button class="mobile-menu-btn" title="Title">
+                       <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="logo">
+                      <img src="./assets/img1.png" alt="Logo">
+                      <span>Dashboard</span>
+                    </div>
+                    <div class="header-left">
+                        <div class="search-bar">
+                           <i class="fas fa-search"></i>
+                           <input type="text" placeholder="Search vehicles, locations, reports..." />
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-actions">
+                            <div class="language-selector action-btn tooltip">
+                                <select>
+                                   <option value="en">EN</option>
+                                   <option value="es">ES</option>
+                                   <option value="fr">FR</option>
+                                   <option value="de">DE</option>
+                                </select>
+                            </div>
+                            <div class="action-btn tooltip">
+                               <i class="fas fa-plus"></i>
+                               <span class="tooltip-text">New Report</span>
+                            </div>
+                            <div class="action-btn tooltip">
+                               <i class="fas fa-sync-alt"></i>
+                              <span class="tooltip-text">Refresh Data</span>
+                            </div>
+                            <div class="action-btn notification tooltip">
+                               <i class="fas fa-bell"></i>
+                               <span class="notification-badge">5</span>
+                               <span class="tooltip-text">Notifications</span>
+                            </div>
+                            <div class="user-profile">
+                               <img src="./assets/img2.png" alt="User" class="user-avatar">
+                                <div class="user-info">
+                                    <div class="user-name">Admin User</div>
+                                     <div class="user-role">Super Admin</div>
+                                </div>
+                                 <i class="fas fa-chevron-down"></i>
+                            </div>
+                         </div>
+                    </div>
+                </header>
+            </nav>
+            <!-- Content -->
+            <div class="content">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h1>Waste Management Dashboard</h1>
+                        <p>Real-time monitoring of waste collection vehicles and operations</p>
+                    </div>
+                    <button class="btn btn-secondary" title="Title">
+                        <i class="fas fa-filter"></i>Filters</button>
+                    <button class="btn btn-primary" title="Title">
+                        <i class="fas fa-download"></i>
+                        Export Report
+                    </button>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card m-1">
+                        <div class="stat-header">
+                            <div>
+                                <div class="stat-title">Active Vehicles</div>
+                                <div class="stat-value">8/12</div>
+                            </div>
+                            <div class="stat-icon primary">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                        </div>
+                        <div class="stat-change negative">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>2 vehicles in maintenance</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card m-2">
+                        <div class="stat-header">
+                            <div>
+                                <div class="stat-title">Collections Today</div>
+                                <div class="stat-value">147</div>
+                            </div>
+                            <div class="stat-icon primary">
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                        </div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>12% from yesterday</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card m-3">
+                        <div class="stat-header">
+                            <div>
+                                <div class="stat-title">Total Waste (kg)</div>
+                                <div class="stat-value">4,856</div>
+                            </div>
+                            <div class="stat-icon warning">
+                                <i class="fas fa-weight-hanging"></i>
+                            </div>
+                        </div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>8% from last week</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card m-4">
+                        <div class="stat-header">
+                            <div>
+                                <div class="stat-title">Recycling Rate</div>
+                                <div class="stat-value">68%</div>
+                            </div>
+                            <div class="stat-icon primary">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                        </div>
+                        <div class="stat-change negative">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>3% from last month</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map and Vehicle List -->
+                <div class="main-grid">
+                    <div class="map-card">
+                        <div class="card-header">
+                            <div class="card-title">Live Vehicle Tracking</div>
+                            <div class="card-actions">
+                                <select title="lang">
+                                    <option>All Vehicles</option>
+                                    <option>Garbage Trucks</option>
+                                    <option>Recycling Trucks</option>
+                                </select>
+                                <button class="btn btn-secondary" style="padding: 0.5rem 1rem;" title="Title">
+                                    <i class="fas fa-layer-group"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                            <div class="map-overlay">
+                                <div class="map-control">
+                                    <div class="map-control-label">Total Distance Today</div>
+                                    <div class="map-control-value">148 km</div>
+                                </div>
+                                <div class="map-control">
+                                    <div class="map-control-label">Fuel Consumption</div>
+                                    <div class="map-control-value">284 L</div>
+                                </div>
+                                <div class="map-control">
+                                    <div class="map-control-label">Avg. Speed</div>
+                                    <div class="map-control-value">32 km/h</div>
+                                </div>
+                            </div>
+                                <div class="map-placeholder">
+                                   <i class="fas fa-map-marked-alt" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                                   <p>Vehicle locations would appear on a live map</p>
+                                   <small>Integration with Google Maps or Mapbox would go here</small>
+                                </div>
+                            <!-- Example vehicle markers (would be dynamic in real app) -->
+                            <div class="vehicle-marker" style="top: 30%; left: 25%;">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="vehicle-marker" style="top: 45%; left: 60%;">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="vehicle-marker" style="top: 70%; left: 40%;">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            
+                            <!-- Example route path (would be dynamic in real app) -->
+                            <div class="route-path" style="width: 200px; top: 30%; left: 25%; transform: rotate(30deg);"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="vehicle-list">
+                        <div class="card-header">
+                            <div class="card-title">Vehicle Status</div>
+                            <div class="card-actions">
+                                <select>
+                                    <option>All Status</option>
+                                    <option>Active</option>
+                                    <option>Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="vehicle-card active">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="vehicle-info">
+                                <div class="vehicle-name">Garbage Truck #45</div>
+                                <div class="vehicle-status">
+                                    <span class="status-indicator active"></span>
+                                    <span>On Route</span>
+                                </div>
+                                <div class="vehicle-location">Downtown District</div>
+                            </div>
+                            <div class="vehicle-meta">
+                                <div class="vehicle-meta-item">
+                                    <i class="fas fa-gas-pump"></i>
+                                        <span>78% fuel</span>
+                                </div>
+                                <div class="vehicle-meta-item">
+                                    <i class="fas fa-road"></i>
+                                    <span>42 km today</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="vehicle-info">
+                                <div class="vehicle-name">Recycling Truck #12</div>
+                                <div class="vehicle-status">
+                                    <span class="status-indicator active"></span>
+                                    <span>Collecting</span>
+                                </div>
+                                <div class="vehicle-location">Green Valley Area</div>
+                            </div>
+                            <div class="vehicle-meta">
+                                <div class="vehicle-meta-item">
+                                    <i class="fas fa-gas-pump"></i>
+                                    <span>65% fuel</span>
+                                </div>
+                                <div class="vehicle-meta-item">
+                                    <i class="fas fa-road"></i>
+                                    <span>38 km today</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="vehicle-info">
+                                <div class="vehicle-name">Garbage Truck #32</div>
+                                <div class="vehicle-status">
+                                    <span class="status-indicator warning"></span>
+                                    <span>Delayed</span>
+                                </div>
+                                <div class="vehicle-location">Industrial Zone</div>
+                            </div>
+                            <div class="vehicle-meta">
+                                <div class="vehicle-meta-item">
+                                    <i class="fas fa-gas-pump"></i>
+                                    <span>89% fuel</span>
+                                </div>
+                                <div class="vehicle-meta-item">
+                                    <i class="fas fa-road"></i>
+                                    <span>28 km today</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="vehicle-info">
+                                <div class="vehicle-name">Hazardous Waste #07</div>
+                                <div class="vehicle-status">
+                                    <span class="status-indicator inactive"></span>
+                                    <span>In Depot</span>
+                                </div>
+                                <div class="vehicle-location">Main Facility</div>
+                            </div>
+                            <div class="vehicle-meta">
+                                <div class="vehicle-meta-item">
+                                    <i class="fas fa-gas-pump"></i>
+                                    <span>100% fuel</span>
+                                </div>
+                                <div class="vehicle-meta-item">
+                                    <i class="fas fa-road"></i>
+                                    <span>0 km today</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="card-header">
+                        <div class="card-title">Monthly Waste Collection</div>
+                        <div class="chart-tabs">
+                            <div class="chart-tab active">Weight</div>
+                            <div class="chart-tab">Collections</div>
+                            <div class="chart-tab">Recycling</div>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-chart-bar" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                            <p>Monthly waste collection charts would appear here</p>
+                            <small>Integration with Chart.js or similar would go here</small>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Collections Table -->
+                <div class="collection-table">
+                    <div class="card-header">
+                        <div class="card-title">Today's Collections</div>
+                        <div class="card-actions">
+                            <select>
+                                <option>All Types</option>
+                                <option>General Waste</option>
+                                <option>Recyclables</option>
+                                <option>Hazardous</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Vehicle</th>
+                                <th>Location</th>
+                                <th>Time</th>
+                                <th>Weight (kg)</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#COL-7841</td>
+                                <td>Garbage Truck #45</td>
+                                <td>Main Street</td>
+                                <td>08:45 AM</td>
+                                <td>320</td>
+                                <td>General</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#COL-7840</td>
+                                <td>Recycling Truck #12</td>
+                                <td>Green Valley</td>
+                                <td>09:30 AM</td>
+                                <td>180</td>
+                                <td>Recyclables</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#COL-7839</td>
+                                <td>Garbage Truck #32</td>
+                                <td>Industrial Zone</td>
+                                <td>10:15 AM</td>
+                                <td>420</td>
+                                <td>General</td>
+                                <td><span class="status pending">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>#COL-7838</td>
+                                <td>Recycling Truck #08</td>
+                                <td>Eco Park</td>
+                                <td>11:00 AM</td>
+                                <td>150</td>
+                                <td>Recyclables</td>
+                                <td><span class="status pending">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>#COL-7837</td>
+                                <td>Garbage Truck #22</td>
+                                <td>Downtown</td>
+                                <td>11:45 AM</td>
+                                <td>380</td>
+                                <td>General</td>
+                                <td><span class="status delayed">Delayed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br/>
+                <br/>
+                <div class="alerts-section">
+                    <div class="section-header">
+                        <div class="section-title">Alerts & Predictive Maintenance</div>
+                        <div class="card-actions">
+                            <select>
+                                <option>All Alerts</option>
+                                <option>Maintenance</option>
+                                <option>Route Issues</option>
+                                <option>Collection Alerts</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="alert-card">
+                        <div class="alert-icon warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="alert-content">
+                            <div class="alert-title">Preventive Maintenance Due</div>
+                            <div class="alert-message">Garbage Truck #32 is due for oil change and brake inspection in 3 days</div>
+                            <div class="alert-time">Today, 10:15 AM</div>
+                        </div>
+                        <div class="alert-actions">
+                            <button class="alert-btn alert-btn-primary">Schedule</button>
+                            <button class="alert-btn alert-btn-secondary">Dismiss</button>
+                        </div>
+                    </div>
+                     <div class="alert-card">
+                        <div class="alert-icon danger">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="alert-content">
+                            <div class="alert-title">Engine Performance Alert</div>
+                            <div class="alert-message">Recycling Truck #12 showing abnormal fuel consumption patterns</div>
+                            <div class="alert-time">Today, 9:30 AM</div>
+                        </div>
+                        <div class="alert-actions">
+                            <button class="alert-btn alert-btn-primary">Inspect</button>
+                            <button class="alert-btn alert-btn-secondary">Later</button>
+                        </div>
+                    </div>
+                    <div class="alert-card">
+                        <div class="alert-icon info">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="alert-content">
+                            <div class="alert-title">Route Optimization Suggestion</div>
+                            <div class="alert-message">AI suggests 12% efficiency gain by adjusting Downtown collection route</div>
+                            <div class="alert-time">Yesterday, 4:45 PM</div>
+                        </div>
+                        <div class="alert-actions">
+                            <button class="alert-btn alert-btn-primary">View</button>
+                            <button class="alert-btn alert-btn-secondary">Dismiss</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </main>
+    </div>
+    <script>
+        const mobilemenubtn = document.querySelector('.mobile-menu-btn');
+        const sidebar = document.querySelector('.sidebar-menu');
+        const navlink = document.querySelector('.navlink');
+        mobilemenubtn.addEventListener('click', function(){
+            sidebar.classList.toggle('active');
+            navlink.classList.toggle('active');
+        });
+        navlink.addEventListener('click', function(){
+            mobilemenubtn.classList.remove('active');
+            sidebar.classList.remove('active');
+        });
+        const mobilelink = document.querySelectorAll('.nav-links a');
+        mobilelink.forEach(link => {
+            link.addEventListener('click', function(){
+                sidebar.classList.remove('active');
+                navlink.classList.remove('active');
+            });
+        });
+        const searchInput = document.querySelector('search-bar input');
+        if(searchInput){
+            searchInput.addEventListener('focus', function(){
+                if(window.innerWidth<=992){
+                    this.style.width = '200px';
+                    this.style.cursor = 'text';
+                    this.setAttribute('placeholder', 'Search...');
+                }
+            });
+            searchInput.addEventListener('blur', function(){
+                if(window.innerWidth<=992 && this.value === ''){
+                    this.style.width = '40px';
+                    this.style.cursor = 'pointer';
+                    this.setAttribute('placeholder', '');
+                }
+            });
+        }
+        window.addEventListener('resize', function(){
+            if(window.innerWidth > 992){
+                sidebar.classList.remove('active');
+                navlink.classList.remove('active');
+                if (searchInput) {
+                    searchInput.style.width = '200px';
+                    searchInput.style.cursor = 'text';
+                    searchInput.setAttribute('placeholder', 'Search...');
+                }
+            }
+        });
+        const vehicleCards = document.querySelectorAll('.vehicle-card');
+        vehicleCards.forEach(card => {
+            card.addEventListener('click', function() {
+                vehicleCards.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        const chartTabs = document.querySelectorAll('.chart-tab');
+        chartTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                chartTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    document.querySelectorAll('.tooltip').forEach(el => {
+            el.addEventListener('mouseenter', function() {
+                const tooltip = this.querySelector('.tooltip-text');
+                if (tooltip) {
+                    tooltip.style.visibility = 'visible';
+                    tooltip.style.opacity = '1';
+                }
+            });
+              el.addEventListener('mouseleave', function() {
+                const tooltip = this.querySelector('.tooltip-text');
+                if (tooltip) {
+                    tooltip.style.visibility = 'hidden';
+                    tooltip.style.opacity = '0';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
